@@ -30,7 +30,7 @@
         _webview = [[WKWebView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
         [_webview loadHTMLString:@"<div style='height:100px;width:200px;background-color:yellow'></div>" baseURL:nil];
         [self addSubview:_webview];
-        [self.layer setNeedsDisplay];
+        [self.layer setNeedsLayout];
     }
 
     return self;

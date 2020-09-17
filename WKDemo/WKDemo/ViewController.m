@@ -22,6 +22,7 @@
     UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(100, 300, 100, 40)];
     [button setBackgroundColor:[UIColor redColor]];
     [button addTarget:self action:@selector(didClick) forControlEvents:UIControlEventTouchUpInside];
+    [button setTitle:@"click me" forState:UIControlStateNormal];
     [self.view addSubview:button];
 }
 
